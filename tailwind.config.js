@@ -10,7 +10,8 @@ export default {
         background: "#E5E5E5",
         primary: "#EB5757",
         accent: "#FEE9DE",
-        gray1: "#333333"
+        gray1: "#333333",
+        gray2: "#E0E0E0",
       },
       lineHeight: {
         'extra-loose': '90px',

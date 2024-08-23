@@ -7,3 +7,20 @@
 *{
   font-family: "Poppins", sans-serif !important;
 }
+
+
+/* Custom scrollbar */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #FEE9DE;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-color: #EB5757;
+}
