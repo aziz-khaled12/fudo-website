@@ -12,6 +12,7 @@ export default {
         accent: "#FEE9DE",
         gray1: "#333333",
         gray2: "#E0E0E0",
+        gray3: "#828282",
       },
       lineHeight: {
         'extra-loose': '90px',
