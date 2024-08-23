@@ -18,8 +18,8 @@ const Testemonials = () => {
             alt="test image"
             className="w-full h-auto max-h-[90vh] relative"
           />
-          <div className="absolute bg-white -bottom-10 px-6 pb-5 pt-8 rounded-xl right-0 shadow-xl">
-            <div className="mb-3 text-xl font-semibold">Our Reviewers</div>
+          <div className="absolute bg-white -bottom-16 px-6 pb-5 pt-8 rounded-xl right-0 shadow-xl">
+            <div className="mb-3 text-xl font-semibold ml-2">Our Reviewers</div>
             <ThemeProvider
               theme={createTheme({
                 components: {

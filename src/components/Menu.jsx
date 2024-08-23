@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,7 +13,9 @@ const Menu = () => {
   const swiperRef = useRef(null);
   const [selected, setSelected] = useState("burger");
 
-  const filteredContent = menuContent.filter((item) => item.name === selected);
+  const filteredContent = useMemo(() => {
+    return menuContent.filter((item) => item.name === selected);
+  }, [menuContent, selected]);
 
   return (
     <>
@@ -45,16 +47,16 @@ const Menu = () => {
           </div>
         </div>
         <div className="w-full flex justify-between">
-          <div className="w-[350px] h-[65vh] overflow-auto custom-scrollbar mr-10">
+          <div className="w-[30%] h-[65vh] overflow-auto custom-scrollbar mr-10">
             <div className="flex flex-col items-center">
               <div className="w-full pr-20">
                 {menuItems.map((item, index) => {
                   return (
                     <>
                       <div
-                        className={`p-4 cursor-pointer flex items-center w-full mb-3 rounded-full ${
+                        className={`p-4 cursor-pointer flex items-center w-[95%] mb-3 rounded-full ${
                           selected === item.name
-                            ? `bg-primary`
+                            ? `bg-primary duration-0`
                             : `bg-transparent hover:bg-accent duration-200`
                         }`}
                         onClick={() => {
@@ -88,7 +90,7 @@ const Menu = () => {
               </div>
             </div>
           </div>
-          <div className="w-[70%] h-[60vh]">
+          <div className="w-[60%] h-[68vh]">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               slidesPerView={1.75}
@@ -101,7 +103,7 @@ const Menu = () => {
                  <img
                    src={item.image}
                    alt={item.title}
-                   className="w-full h-auto max-h-[60vh] rounded-2xl"
+                   className="w-full h-auto max-h-[68vh] rounded-2xl"
                  />
                  <div className="absolute inset-0 flex flex-col justify-end px-6 py-4 bg-gradient-to-t rounded-2xl from-black via-transparent to-transparent text-start">
                    <h2 className="text-3xl font-medium text-white ">{item.title}</h2>

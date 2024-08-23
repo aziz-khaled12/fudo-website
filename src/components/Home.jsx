@@ -1,5 +1,6 @@
 import React from "react";
 import HomeImage from "../assets/images/HomeImage.png";
+import cherryImage from "../assets/images/cherry.png";
 const Home = () => {
   return (
     <>
@@ -12,9 +13,11 @@ const Home = () => {
       </div>
       <div className="z-10 w-full h-screen">
         <div className="flex flex-col items-start justify-center w-[37vw] h-full">
-          <div className="bg-accent text-primary font-medium text-base flex items-center py-4 px-10 rounded-full mb-12">
-            More than faster{" "}
-
+          <div className="bg-accent text-primary font-medium text-base flex items-center py-4 gap-4 px-5 rounded-full mb-12">
+            More than faster 
+            <div className="w-5 h-4">
+              <img src={cherryImage} alt="cherry" className="w-full h-full" />
+            </div>
           </div>
           <h1 className="text-7xl font-bold text-gray1 leading-extra-loose mb-6">
             Be The Fastest In Delivering Your{" "}
