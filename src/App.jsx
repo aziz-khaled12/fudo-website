@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Menu from "./components/Menu";
 import Testemonials from "./components/Testemonials";
+import GetStarted from "./components/GetStarted";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <About />
         <Menu />
         <Testemonials />
+        < GetStarted />
       </div>
     </>
   );
