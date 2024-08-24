@@ -6,7 +6,7 @@ import CupcakeImage from "../assets/images/cupcake.png";
 import SodaImage from "../assets/images/soda.png";
 import JuiceImage from "../assets/images/juice.png";
 import BurgerContent from "../assets/images/burgerContent.jpg";
-import IceCreamContent from "../assets/images/iceCreamContent.jpg";
+import IceCreamContent from "../assets/images/icecreamContent.jpg";
 import RamenContent from "../assets/images/ramenContent.jpg";
 import PizzaContent from "../assets/images/pizzaContent.jpg";
 import CupcakeContent from "../assets/images/cupcakeContent.jpg";
