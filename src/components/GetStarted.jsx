@@ -2,7 +2,7 @@ import React from "react";
 import appImage from "../assets/images/app.png";
 const GetStarted = () => {
   return (
-    <div className="w-full mt-28 h-[90vh] bg-accent rounded-2xl">
+    <div className="w-full mt-28 h-[90vh] bg-accent rounded-2xl" id="getStarted">
       <div className="flex w-full p-28">
         <div className="w-[45%]">
           <div className="font-semibold text-lg text-primary tracking-[0.2em] mb-6">

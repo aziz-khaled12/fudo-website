@@ -19,7 +19,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className="w-full flex items-center flex-col mt-28">
+      <div className="w-full flex items-center flex-col mt-28" id="menu">
         <div className="w-full flex items-end justify-between  mb-12">
           <div className="w-[50%] text-start">
             <div className="font-semibold text-lg text-primary tracking-[0.2em] mb-3">

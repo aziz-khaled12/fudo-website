@@ -27,18 +27,21 @@ const Navbar = () => {
     {
       id: 1,
       name: "Services",
+      to: "about"
     },
     {
       id: 2,
       name: "Menu",
+       to: "menu"
     },
     {
       id: 3,
       name: "Contact",
+       to: "footer"
     },
   ];
   return (
-    <div className="w-full flex items-center justify-between">
+    <div className="w-full flex items-center justify-between z-20">
       <div className="flex items-center font-semibold text-2xl">
         <div className="mr-5 w-11 h-11">
           <img src={logoImage} alt="logo" className="w-full h-full" />
@@ -49,7 +52,7 @@ const Navbar = () => {
       <div className="w-[420px]">
         <div className="flex w-full items-center justify-between text-sm font-medium">
           {NavigationBar.map((setting, index) => {
-            return <div>{setting.name}</div>;
+            return <div onClick={() => {document.getElementById(setting.to).scrollIntoView({behavior: "smooth"})}} className="hover:text-primary duration-200 cursor-pointer" key={index}>{setting.name}</div>;
           })}
         </div>
       </div>

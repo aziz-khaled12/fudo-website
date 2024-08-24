@@ -25,7 +25,7 @@ const aboutCards = [
 ];
 const About = () => {
   return (
-    <div className="w-full flex flex-col items-center mt-20">
+    <div className="w-full flex flex-col items-center mt-20" id="about">
       <div className="w-[50%] text-center mb-12">
         <div className="font-semibold text-lg text-primary tracking-[0.2em] mb-5">
           WHAT WE SERVE

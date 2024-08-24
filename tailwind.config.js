@@ -13,6 +13,7 @@ export default {
         gray1: "#333333",
         gray2: "#E0E0E0",
         gray3: "#828282",
+        borderGray: "#BDBDBD"
       },
       lineHeight: {
         'extra-loose': '90px',

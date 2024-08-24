@@ -3,6 +3,7 @@ import logoImage from "../assets/images/logo.png";
 import { AiFillInstagram } from "react-icons/ai";
 import { TiSocialFacebook } from "react-icons/ti";
 import { SiFacebook, SiInstagram, SiX } from "react-icons/si";
+import { LuSendHorizonal } from "react-icons/lu";
 
 const About = ["About Us", "Features", "News", "Menu"];
 const Company = ["Why Fudo", "Partner With Us", "FAQ", "Blog"];
@@ -16,7 +17,7 @@ const Support = [
 
 const Footer = () => {
   return (
-    <div className="w-full mt-28">
+    <div className="w-full mt-28" id="footer">
       <div className="flex items-start w-full gap-24">
 
 
@@ -39,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between flex-2">
+        <div className="flex justify-between flex-[2]">
           <ul>
             <li className="text-xl font-semibold mb-6">About</li>
             {About.map((item, index) => {
@@ -77,9 +78,13 @@ const Footer = () => {
           <p className="text-gray1 text-lg font-medium mb-3">
             Question or feedback?
           </p>
-          <p className="text-gray1 text-lg font-medium">
+          <p className="text-gray1 text-lg font-medium mb-5">
             We’d love to hear from you
           </p>
+
+          <button className="flex p-4 items-center border border-solid border-borderGray  duration-200 rounded-full">
+          Email Address <LuSendHorizonal className="ml-3 text-xl text-primary" />
+          </button>
         </div>
 
 

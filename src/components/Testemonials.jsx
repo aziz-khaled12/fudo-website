@@ -10,7 +10,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const Testemonials = () => {
   return (
-    <div className="w-full flex items-center justify-between mt-28">
+    <div className="w-full flex items-center justify-between mt-28" id="testemonials">
       <div className="w-[45%] h-screen flex items-center justify-center relative">
         <div className="w-full h-auto relative">
           <img
@@ -41,7 +41,7 @@ const Testemonials = () => {
                 },
               })}
             >
-              <AvatarGroup max={4} spacing={20}>
+              <AvatarGroup max={4} spacing={10}>
                 <Avatar
                   sx={{ width: "64px", height: "64px" }}
                   src={personImage}
