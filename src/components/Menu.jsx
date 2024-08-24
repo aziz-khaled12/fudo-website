@@ -56,8 +56,8 @@ const Menu = () => {
                       <div
                         className={`p-4 cursor-pointer flex items-center w-[95%] mb-3 rounded-full ${
                           selected === item.name
-                            ? `bg-primary duration-0`
-                            : `bg-transparent hover:bg-accent duration-200`
+                            ? `bg-primary`
+                            : `bg-transparent hover:bg-accent`
                         }`}
                         onClick={() => {
                           setSelected(item.name);
